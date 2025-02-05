@@ -5,10 +5,10 @@
 
 export function getFirstTenNumbers() {
   const numbers = [];
-  for (let i = 1; i <= 10; i++) {
-    numbers.push(i);
-  }
-  return numbers;
+    for (let i = 1; i <= 10; i++) {
+        numbers.push(i);
+    }
+    return numbers;
 }
 
 // === TEST YOURSELF ===
