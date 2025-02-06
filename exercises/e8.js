@@ -7,12 +7,12 @@
 export function getClientWithGreatestBalance(array) {
   let greatestBalance = 0;
   let greatestBalanceAccount = {};
-  array.forEach((account) => {
-    if (account.balance > greatestBalance) {
-      greatestBalance = account.balance;
-      greatestBalanceAccount = account;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].balance > greatestBalance) {
+      greatestBalance = array[i].balance;
+      greatestBalanceAccount = array[i];
     }
-  });
+  }
   return [greatestBalanceAccount];
 }
 

@@ -8,10 +8,16 @@
 export function separateNamesWithAFromRest(array) {
   let result = [[], []];
   for (let i = 0; i < array.length; i++) {
-    if (array[i].includes('a')) {
-      result[0].push(array[i]);
+    let hasA = false;
+    for (let j = 0; j < array[i].length; j++) {
+      if (array[i][j] === "a") {
+        hasA = true;
+      }
+    }
+  if (hasA) {
+    result[0].push(array[i]);
     } else {
-      result[1].push(array[i]);
+    result[1].push(array[i]);
     }
   }
   return result;

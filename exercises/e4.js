@@ -6,30 +6,22 @@
 import { test } from "vitest";
 
 export function findMinValueInArray(array) {
-  const testArray = [];
-  testArray.push(20, 24, 26, 19);
-  if (array.length === 0) return undefined;
   let min = array[0];
   for (let i = 1; i < array.length; i++) {
     if (array[i] < min) {
       min = array[i];
     }
   }
-  console.log('$Min value found: ${min}');
   return min;
 }
 
 export function findMaxValueInArray(array) {
-  const testArray = [];
-  testArray.push(20, 24, 26, 19);
-  if (array.length === 0) return undefined;
   let max = array[0];
   for (let i = 1; i < array.length; i++) {
     if (array[i] > max) {
       max = array[i];
     }
   }
-  console.log('$Max value found: ${max}');
   return max;
 }
 
